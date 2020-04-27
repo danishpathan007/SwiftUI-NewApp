@@ -13,6 +13,10 @@
 		079F41572455FEE80090F356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079F41562455FEE80090F356 /* Assets.xcassets */; };
 		079F415A2455FEE80090F356 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079F41592455FEE80090F356 /* Preview Assets.xcassets */; };
 		079F415D2455FEE80090F356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079F415B2455FEE80090F356 /* LaunchScreen.storyboard */; };
+		079F4166245602130090F356 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F4165245602130090F356 /* NetworkManager.swift */; };
+		079F4168245603430090F356 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F4167245603430090F356 /* PostData.swift */; };
+		079F416B245608F30090F356 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F416A245608F30090F356 /* DetailView.swift */; };
+		079F416D24560F690090F356 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F416C24560F690090F356 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		079F41592455FEE80090F356 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		079F415C2455FEE80090F356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		079F415E2455FEE80090F356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079F4165245602130090F356 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		079F4167245603430090F356 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		079F416A245608F30090F356 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		079F416C24560F690090F356 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		079F414F2455FEE40090F356 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				079F4164245601FC0090F356 /* Models */,
 				079F41502455FEE40090F356 /* AppDelegate.swift */,
 				079F41522455FEE40090F356 /* SceneDelegate.swift */,
-				079F41542455FEE40090F356 /* ContentView.swift */,
+				079F4169245608B50090F356 /* Views */,
 				079F41562455FEE80090F356 /* Assets.xcassets */,
 				079F415B2455FEE80090F356 /* LaunchScreen.storyboard */,
 				079F415E2455FEE80090F356 /* Info.plist */,
@@ -73,6 +82,25 @@
 				079F41592455FEE80090F356 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		079F4164245601FC0090F356 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				079F4165245602130090F356 /* NetworkManager.swift */,
+				079F4167245603430090F356 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		079F4169245608B50090F356 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				079F41542455FEE40090F356 /* ContentView.swift */,
+				079F416A245608F30090F356 /* DetailView.swift */,
+				079F416C24560F690090F356 /* WebView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079F4168245603430090F356 /* PostData.swift in Sources */,
+				079F416B245608F30090F356 /* DetailView.swift in Sources */,
+				079F4166245602130090F356 /* NetworkManager.swift in Sources */,
 				079F41512455FEE40090F356 /* AppDelegate.swift in Sources */,
 				079F41532455FEE40090F356 /* SceneDelegate.swift in Sources */,
 				079F41552455FEE40090F356 /* ContentView.swift in Sources */,
+				079F416D24560F690090F356 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
